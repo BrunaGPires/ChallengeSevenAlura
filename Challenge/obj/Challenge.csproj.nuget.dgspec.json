@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj": {}
+    "C:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj": {}
   },
   "projects": {
-    "c:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj": {
+    "C:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj",
         "projectName": "Challenge",
-        "projectPath": "c:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj",
+        "projectPath": "C:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\Challenge.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\obj\\",
+        "outputPath": "C:\\Users\\adm\\source\\repos\\DesafioAlura\\Challenge\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config"

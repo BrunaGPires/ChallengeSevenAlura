@@ -1,4 +1,5 @@
 using Challenge.Data.Dtos;
+using Challenge.Models;
 using Challenge.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,16 @@ namespace Challenge.Controllers
         {
             await _depoimentoService.AdicionaDepoimento(dto);
             return Ok("Depoimento cadastrado.");
+        }
+
+        // Get 3 depoimentos aleatorios
+        [HttpGet("aleatorio")]
+        public async Task<IActionResult> RecuperaDepoimentoAleatorio()
+        {
+            Random rnd = new Random();
+            var depoimentos = await _depoimentoService.RecuperaDepoimentos();
+            var _resultSet = depoimentos.OrderBy(x => Guid.NewGuid()).Take(3);
+            return Ok(_resultSet);
         }
 
         // Get 1 depoimento
