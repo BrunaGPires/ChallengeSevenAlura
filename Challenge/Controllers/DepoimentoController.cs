@@ -23,16 +23,14 @@ namespace Challenge.Controllers
         }
 
         // Get 3 depoimentos aleatorios
-        [HttpGet("aleatorio")]
+        [HttpGet("depoimentos-home")]
         public async Task<IActionResult> RecuperaDepoimentoAleatorio()
         {
-            Random rnd = new Random();
-            var depoimentos = await _depoimentoService.RecuperaDepoimentos();
-            var _resultSet = depoimentos.OrderBy(x => Guid.NewGuid()).Take(3);
-            return Ok(_resultSet);
+            var depoimentos = await _depoimentoService.RecuperaDepoimentosAleatorios();
+            return Ok(depoimentos);
         }
 
-        // Get 1 depoimento
+        // Get depoimentos
         [HttpGet]
         public async Task<IActionResult> RecuperaDepoimento()
         {

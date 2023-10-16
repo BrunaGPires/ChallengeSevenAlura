@@ -29,6 +29,14 @@ namespace Challenge.Services
             await _context.SaveChangesAsync();
         }
 
+        public async Task<IEnumerable<ReadDepoimento>> RecuperaDepoimentosAleatorios()
+        {
+            Random rnd = new Random();
+            var depoimentos = await RecuperaDepoimentos();
+            var resultado = depoimentos.OrderBy(x => Guid.NewGuid()).Take(3);
+            return resultado;
+        }
+
         public async Task<IEnumerable<ReadDepoimento>> RecuperaDepoimentos()
         {
             IEnumerable<Depoimentos> depoimentos = await _context.Depoimentos.ToListAsync();
